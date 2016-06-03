@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<con:testCase id="2c580288-4da1-4acf-a764-9d361d4c9fc3" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="emptyTC_commitTest" searchProperties="true" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="2c580288-4da1-4acf-a764-9d361d4c9fc3fileName">emptyTC_commitTest</con:setting></con:settings><con:savedRecentRuns>1</con:savedRecentRuns><con:properties/><con:reportParameters/></con:testCase>
