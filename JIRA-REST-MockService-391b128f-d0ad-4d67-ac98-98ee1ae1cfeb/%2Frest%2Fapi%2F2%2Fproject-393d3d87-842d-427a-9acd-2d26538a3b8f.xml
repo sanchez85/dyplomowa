@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction name="/rest/api/2/project" method="GET" resourcePath="/rest/api/2/project" id="393d3d87-842d-427a-9acd-2d26538a3b8f" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:defaultResponse>Get All Projects [not authenticated]</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:dispatchConfig/><con:dispatchPath xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><con:dispatchXPath/><con:response name="Get All Projects [not authenticated]" id="6f26a548-1a6b-4f5b-b341-b9d63b978b95" httpResponseStatus="200" mediaType="application/json" dataSource=""><con:settings/><con:responseContent>&lt;Empty JSON content></con:responseContent></con:response><con:response name="Get All Projects (3) [authenticated]" id="b3965ce0-838d-4bf4-879a-b1ce54b6a2d3" httpResponseStatus="200" mediaType="application/json" dataSource=""><con:settings/><con:responseContent><![CDATA[[
+      {
+      "expand": "description,lead,url,projectKeys",
+      "self": "https://rest-wsb4.atlassian.net/rest/api/2/project/10100",
+      "id": "10100",
+      "key": "BP",
+      "name": "businessProject",
+      "avatarUrls":       {
+         "48x48": "https://rest-wsb4.atlassian.net/secure/projectavatar?pid=10100&avatarId=10204",
+         "24x24": "https://rest-wsb4.atlassian.net/secure/projectavatar?size=small&pid=10100&avatarId=10204",
+         "16x16": "https://rest-wsb4.atlassian.net/secure/projectavatar?size=xsmall&pid=10100&avatarId=10204",
+         "32x32": "https://rest-wsb4.atlassian.net/secure/projectavatar?size=medium&pid=10100&avatarId=10204"
+      },
+      "projectTypeKey": "business"
+   },
+      {
+      "expand": "description,lead,url,projectKeys",
+      "self": "https://rest-wsb4.atlassian.net/rest/api/2/project/10200",
+      "id": "10200",
+      "key": "PD",
+      "name": "Praca Dyplomowa",
+      "avatarUrls":       {
+         "48x48": "https://rest-wsb4.atlassian.net/secure/projectavatar?pid=10200&avatarId=10600",
+         "24x24": "https://rest-wsb4.atlassian.net/secure/projectavatar?size=small&pid=10200&avatarId=10600",
+         "16x16": "https://rest-wsb4.atlassian.net/secure/projectavatar?size=xsmall&pid=10200&avatarId=10600",
+         "32x32": "https://rest-wsb4.atlassian.net/secure/projectavatar?size=medium&pid=10200&avatarId=10600"
+      },
+      "projectTypeKey": "software"
+   },
+      {
+      "expand": "description,lead,url,projectKeys",
+      "self": "https://rest-wsb4.atlassian.net/rest/api/2/project/10000",
+      "id": "10000",
+      "key": "TP",
+      "name": "testProject",
+      "avatarUrls":       {
+         "48x48": "https://rest-wsb4.atlassian.net/secure/projectavatar?pid=10000&avatarId=10201",
+         "24x24": "https://rest-wsb4.atlassian.net/secure/projectavatar?size=small&pid=10000&avatarId=10201",
+         "16x16": "https://rest-wsb4.atlassian.net/secure/projectavatar?size=xsmall&pid=10000&avatarId=10201",
+         "32x32": "https://rest-wsb4.atlassian.net/secure/projectavatar?size=medium&pid=10000&avatarId=10201"
+      },
+      "projectTypeKey": "software"
+   }
+]]]></con:responseContent></con:response><con:response name="Get All Projects (4) [authenticated]" id="5c76fbe8-acfd-47ef-897a-643e9a9d3e4b" httpResponseStatus="200" mediaType="application/json" dataSource=""><con:settings/><con:responseContent><![CDATA[[
+      {
+      "expand": "description,lead,url,projectKeys",
+      "self": "https://rest-wsb4.atlassian.net/rest/api/2/project/10100",
+      "id": "10100",
+      "key": "BP",
+      "name": "businessProject",
+      "avatarUrls":       {
+         "48x48": "https://rest-wsb4.atlassian.net/secure/projectavatar?pid=10100&avatarId=10204",
+         "24x24": "https://rest-wsb4.atlassian.net/secure/projectavatar?size=small&pid=10100&avatarId=10204",
+         "16x16": "https://rest-wsb4.atlassian.net/secure/projectavatar?size=xsmall&pid=10100&avatarId=10204",
+         "32x32": "https://rest-wsb4.atlassian.net/secure/projectavatar?size=medium&pid=10100&avatarId=10204"
+      },
+      "projectTypeKey": "business"
+   },
+      {
+      "expand": "description,lead,url,projectKeys",
+      "self": "https://rest-wsb4.atlassian.net/rest/api/2/project/11001",
+      "id": "11001",
+      "key": "EX",
+      "name": "Example",
+      "avatarUrls":       {
+         "48x48": "https://rest-wsb4.atlassian.net/secure/projectavatar?pid=11001&avatarId=10200",
+         "24x24": "https://rest-wsb4.atlassian.net/secure/projectavatar?size=small&pid=11001&avatarId=10200",
+         "16x16": "https://rest-wsb4.atlassian.net/secure/projectavatar?size=xsmall&pid=11001&avatarId=10200",
+         "32x32": "https://rest-wsb4.atlassian.net/secure/projectavatar?size=medium&pid=11001&avatarId=10200"
+      },
+      "projectTypeKey": "business"
+   },
+      {
+      "expand": "description,lead,url,projectKeys",
+      "self": "https://rest-wsb4.atlassian.net/rest/api/2/project/10200",
+      "id": "10200",
+      "key": "PD",
+      "name": "Praca Dyplomowa",
+      "avatarUrls":       {
+         "48x48": "https://rest-wsb4.atlassian.net/secure/projectavatar?pid=10200&avatarId=10600",
+         "24x24": "https://rest-wsb4.atlassian.net/secure/projectavatar?size=small&pid=10200&avatarId=10600",
+         "16x16": "https://rest-wsb4.atlassian.net/secure/projectavatar?size=xsmall&pid=10200&avatarId=10600",
+         "32x32": "https://rest-wsb4.atlassian.net/secure/projectavatar?size=medium&pid=10200&avatarId=10600"
+      },
+      "projectTypeKey": "software"
+   },
+      {
+      "expand": "description,lead,url,projectKeys",
+      "self": "https://rest-wsb4.atlassian.net/rest/api/2/project/10000",
+      "id": "10000",
+      "key": "TP",
+      "name": "testProject",
+      "avatarUrls":       {
+         "48x48": "https://rest-wsb4.atlassian.net/secure/projectavatar?pid=10000&avatarId=10201",
+         "24x24": "https://rest-wsb4.atlassian.net/secure/projectavatar?size=small&pid=10000&avatarId=10201",
+         "16x16": "https://rest-wsb4.atlassian.net/secure/projectavatar?size=xsmall&pid=10000&avatarId=10201",
+         "32x32": "https://rest-wsb4.atlassian.net/secure/projectavatar?size=medium&pid=10000&avatarId=10201"
+      },
+      "projectTypeKey": "software"
+   }
+]]]></con:responseContent></con:response></con:restMockAction>

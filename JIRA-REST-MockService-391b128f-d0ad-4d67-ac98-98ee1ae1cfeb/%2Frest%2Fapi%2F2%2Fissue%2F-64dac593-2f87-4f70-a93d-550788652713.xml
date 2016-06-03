@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction name="/rest/api/2/issue/" method="GET" resourcePath="/rest/api/2/issue/" id="64dac593-2f87-4f70-a93d-550788652713" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:defaultResponse>Get Created Issue</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:dispatchConfig/><con:dispatchPath xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><con:dispatchXPath/><con:response name="Get Created Issue" id="472d632a-eebb-4dcc-8b75-efa84ce78d79" httpResponseStatus="200" mediaType="application/json" dataSource=""><con:settings/><con:responseContent><![CDATA[{
+   "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+   "id": "12345",
+   "self": "https://rest-wsb4.atlassian.net/rest/api/2/issue/10803",
+   "key": "TP-01",
+   "fields":    {
+      "issuetype":       {
+         "self": "https://rest-wsb4.atlassian.net/rest/api/2/issuetype/10004",
+         "id": "10004",
+         "description": "A problem which impairs or prevents the functions of the product.",
+         "iconUrl": "https://rest-wsb4.atlassian.net/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+         "name": "Bug",
+         "subtask": false,
+         "avatarId": 10303
+      },
+      "timespent": null,
+      "project":       {
+         "self": "https://rest-wsb4.atlassian.net/rest/api/2/project/10000",
+         "id": "10000",
+         "key": "TP",
+         "name": "testProject",
+         "avatarUrls":          {
+            "48x48": "https://rest-wsb4.atlassian.net/secure/projectavatar?pid=10000&avatarId=10201",
+            "24x24": "https://rest-wsb4.atlassian.net/secure/projectavatar?size=small&pid=10000&avatarId=10201",
+            "16x16": "https://rest-wsb4.atlassian.net/secure/projectavatar?size=xsmall&pid=10000&avatarId=10201",
+            "32x32": "https://rest-wsb4.atlassian.net/secure/projectavatar?size=medium&pid=10000&avatarId=10201"
+         }
+      },
+      "fixVersions": [],
+      "aggregatetimespent": null,
+      "resolution": null,
+      "resolutiondate": null,
+      "workratio": -1,
+      "lastViewed": null,
+      "watches":       {
+         "self": "https://rest-wsb4.atlassian.net/rest/api/2/issue/TP-45/watchers",
+         "watchCount": 1,
+         "isWatching": true
+      },
+      "created": "2016-06-03T11:19:28.240+0200",
+      "customfield_10020": null,
+      "customfield_10021": null,
+      "customfield_10022": null,
+      "priority":       {
+         "self": "https://rest-wsb4.atlassian.net/rest/api/2/priority/3",
+         "iconUrl": "https://rest-wsb4.atlassian.net/images/icons/priorities/medium.svg",
+         "name": "Medium",
+         "id": "3"
+      },
+      "customfield_10100": "com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@11c296a",
+      "customfield_10023": null,
+      "customfield_10024": "Not started",
+      "customfield_10025": null,
+      "labels": [],
+      "customfield_10016": null,
+      "customfield_10017": null,
+      "customfield_10018": null,
+      "customfield_10019": null,
+      "timeestimate": null,
+      "aggregatetimeoriginalestimate": null,
+      "versions": [],
+      "issuelinks": [],
+      "assignee": null,
+      "updated": "2016-06-03T11:19:28.240+0200",
+      "status":       {
+         "self": "https://rest-wsb4.atlassian.net/rest/api/2/status/10000",
+         "description": "",
+         "iconUrl": "https://rest-wsb4.atlassian.net/",
+         "name": "To Do",
+         "id": "10000",
+         "statusCategory":          {
+            "self": "https://rest-wsb4.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+         }
+      },
+      "components": [],
+      "timeoriginalestimate": null,
+      "description": "Description",
+      "customfield_10013": null,
+      "customfield_10014": null,
+      "timetracking": {},
+      "customfield_10015": null,
+      "customfield_10007": null,
+      "attachment": [],
+      "aggregatetimeestimate": null,
+      "summary": "Summary",
+      "creator":       {
+         "self": "https://rest-wsb4.atlassian.net/rest/api/2/user?username=admin",
+         "name": "admin",
+         "key": "admin",
+         "emailAddress": "mg.ciwoniuk@gmail.com",
+         "avatarUrls":          {
+            "48x48": "https://rest-wsb4.atlassian.net/secure/useravatar?avatarId=10349",
+            "24x24": "https://rest-wsb4.atlassian.net/secure/useravatar?size=small&avatarId=10349",
+            "16x16": "https://rest-wsb4.atlassian.net/secure/useravatar?size=xsmall&avatarId=10349",
+            "32x32": "https://rest-wsb4.atlassian.net/secure/useravatar?size=medium&avatarId=10349"
+         },
+         "displayName": "Gosia",
+         "active": true,
+         "timeZone": "Europe/Berlin"
+      },
+      "subtasks": [],
+      "reporter":       {
+         "self": "https://rest-wsb4.atlassian.net/rest/api/2/user?username=admin",
+         "name": "admin",
+         "key": "admin",
+         "emailAddress": "mg.ciwoniuk@gmail.com",
+         "avatarUrls":          {
+            "48x48": "https://rest-wsb4.atlassian.net/secure/useravatar?avatarId=10349",
+            "24x24": "https://rest-wsb4.atlassian.net/secure/useravatar?size=small&avatarId=10349",
+            "16x16": "https://rest-wsb4.atlassian.net/secure/useravatar?size=xsmall&avatarId=10349",
+            "32x32": "https://rest-wsb4.atlassian.net/secure/useravatar?size=medium&avatarId=10349"
+         },
+         "displayName": "Gosia",
+         "active": true,
+         "timeZone": "Europe/Berlin"
+      },
+      "customfield_10000": null,
+      "aggregateprogress":       {
+         "progress": 0,
+         "total": 0
+      },
+      "customfield_10001": null,
+      "customfield_10002": "0|i0001z:",
+      "customfield_10003": null,
+      "environment": null,
+      "duedate": null,
+      "progress":       {
+         "progress": 0,
+         "total": 0
+      },
+      "comment":       {
+         "startAt": 0,
+         "maxResults": 0,
+         "total": 0,
+         "comments": []
+      },
+      "votes":       {
+         "self": "https://rest-wsb4.atlassian.net/rest/api/2/issue/TP-45/votes",
+         "votes": 0,
+         "hasVoted": false
+      },
+      "worklog":       {
+         "startAt": 0,
+         "maxResults": 20,
+         "total": 0,
+         "worklogs": []
+      }
+   }
+}]]></con:responseContent></con:response><con:response name="Get Modified Issue" id="d1497ddd-d9c5-4d0b-bfd1-e1c2b65187fa" httpResponseStatus="200" mediaType="application/json" dataSource=""><con:settings/><con:responseContent><![CDATA[{
+   "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+   "id": "12345",
+   "self": "https://rest-wsb4.atlassian.net/rest/api/2/issue/10803",
+   "key": "TP-01",
+   "fields":    {
+      "issuetype":       {
+         "self": "https://rest-wsb4.atlassian.net/rest/api/2/issuetype/10004",
+         "id": "10004",
+         "description": "A problem which impairs or prevents the functions of the product.",
+         "iconUrl": "https://rest-wsb4.atlassian.net/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+         "name": "Bug",
+         "subtask": false,
+         "avatarId": 10303
+      },
+      "timespent": null,
+      "project":       {
+         "self": "https://rest-wsb4.atlassian.net/rest/api/2/project/10000",
+         "id": "10000",
+         "key": "TP",
+         "name": "testProject",
+         "avatarUrls":          {
+            "48x48": "https://rest-wsb4.atlassian.net/secure/projectavatar?pid=10000&avatarId=10201",
+            "24x24": "https://rest-wsb4.atlassian.net/secure/projectavatar?size=small&pid=10000&avatarId=10201",
+            "16x16": "https://rest-wsb4.atlassian.net/secure/projectavatar?size=xsmall&pid=10000&avatarId=10201",
+            "32x32": "https://rest-wsb4.atlassian.net/secure/projectavatar?size=medium&pid=10000&avatarId=10201"
+         }
+      },
+      "fixVersions": [],
+      "aggregatetimespent": null,
+      "resolution": null,
+      "resolutiondate": null,
+      "workratio": -1,
+      "lastViewed": null,
+      "watches":       {
+         "self": "https://rest-wsb4.atlassian.net/rest/api/2/issue/TP-45/watchers",
+         "watchCount": 1,
+         "isWatching": true
+      },
+      "created": "2016-06-03T11:19:28.240+0200",
+      "customfield_10020": null,
+      "customfield_10021": null,
+      "customfield_10022": null,
+      "priority":       {
+         "self": "https://rest-wsb4.atlassian.net/rest/api/2/priority/3",
+         "iconUrl": "https://rest-wsb4.atlassian.net/images/icons/priorities/medium.svg",
+         "name": "Medium",
+         "id": "3"
+      },
+      "customfield_10100": "com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@15b991e",
+      "customfield_10023": null,
+      "customfield_10024": "Not started",
+      "customfield_10025": null,
+      "labels": [],
+      "customfield_10016": null,
+      "customfield_10017": null,
+      "customfield_10018": null,
+      "customfield_10019": null,
+      "timeestimate": null,
+      "aggregatetimeoriginalestimate": null,
+      "versions": [],
+      "issuelinks": [],
+      "assignee": null,
+      "updated": "2016-06-03T11:19:29.018+0200",
+      "status":       {
+         "self": "https://rest-wsb4.atlassian.net/rest/api/2/status/10000",
+         "description": "",
+         "iconUrl": "https://rest-wsb4.atlassian.net/",
+         "name": "To Do",
+         "id": "10000",
+         "statusCategory":          {
+            "self": "https://rest-wsb4.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+         }
+      },
+      "components": [],
+      "timeoriginalestimate": null,
+      "description": "New Description",
+      "customfield_10013": null,
+      "customfield_10014": null,
+      "timetracking": {},
+      "customfield_10015": null,
+      "customfield_10007": null,
+      "attachment": [],
+      "aggregatetimeestimate": null,
+      "summary": "New Summary",
+      "creator":       {
+         "self": "https://rest-wsb4.atlassian.net/rest/api/2/user?username=admin",
+         "name": "admin",
+         "key": "admin",
+         "emailAddress": "mg.ciwoniuk@gmail.com",
+         "avatarUrls":          {
+            "48x48": "https://rest-wsb4.atlassian.net/secure/useravatar?avatarId=10349",
+            "24x24": "https://rest-wsb4.atlassian.net/secure/useravatar?size=small&avatarId=10349",
+            "16x16": "https://rest-wsb4.atlassian.net/secure/useravatar?size=xsmall&avatarId=10349",
+            "32x32": "https://rest-wsb4.atlassian.net/secure/useravatar?size=medium&avatarId=10349"
+         },
+         "displayName": "Gosia",
+         "active": true,
+         "timeZone": "Europe/Berlin"
+      },
+      "subtasks": [],
+      "reporter":       {
+         "self": "https://rest-wsb4.atlassian.net/rest/api/2/user?username=admin",
+         "name": "admin",
+         "key": "admin",
+         "emailAddress": "mg.ciwoniuk@gmail.com",
+         "avatarUrls":          {
+            "48x48": "https://rest-wsb4.atlassian.net/secure/useravatar?avatarId=10349",
+            "24x24": "https://rest-wsb4.atlassian.net/secure/useravatar?size=small&avatarId=10349",
+            "16x16": "https://rest-wsb4.atlassian.net/secure/useravatar?size=xsmall&avatarId=10349",
+            "32x32": "https://rest-wsb4.atlassian.net/secure/useravatar?size=medium&avatarId=10349"
+         },
+         "displayName": "Gosia",
+         "active": true,
+         "timeZone": "Europe/Berlin"
+      },
+      "customfield_10000": null,
+      "aggregateprogress":       {
+         "progress": 0,
+         "total": 0
+      },
+      "customfield_10001": null,
+      "customfield_10002": "0|i0001z:",
+      "customfield_10003": null,
+      "environment": null,
+      "duedate": null,
+      "progress":       {
+         "progress": 0,
+         "total": 0
+      },
+      "comment":       {
+         "startAt": 0,
+         "maxResults": 0,
+         "total": 0,
+         "comments": []
+      },
+      "votes":       {
+         "self": "https://rest-wsb4.atlassian.net/rest/api/2/issue/TP-45/votes",
+         "votes": 0,
+         "hasVoted": false
+      },
+      "worklog":       {
+         "startAt": 0,
+         "maxResults": 20,
+         "total": 0,
+         "worklogs": []
+      }
+   }
+}]]></con:responseContent></con:response><con:response name="Get Deleted Issue" id="ec2b5bf0-cdd4-4596-bb20-b98fe0b801b2" httpResponseStatus="404" mediaType="application/json" dataSource=""><con:settings/><con:responseContent>{
+   "errorMessages": ["Issue Does Not Exist"],
+   "errors": {}
+}</con:responseContent></con:response></con:restMockAction>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction name="/rest/api/2/user" method="GET" resourcePath="/rest/api/2/user" id="773bdc43-5371-4b75-8c19-018ae45902e7" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:defaultResponse>Get New User</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:dispatchConfig/><con:dispatchPath xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><con:dispatchXPath/><con:response name="Get New User" id="674ae060-c96e-4f2b-bcaf-b2b4c2d7cc1c" httpResponseStatus="200" mediaType="application/json" dataSource=""><con:settings/><con:responseContent>{
+   "self": "https://rest-wsb4.atlassian.net/rest/api/2/user?username=jane_doe",
+   "key": "ID12345",
+   "name": "jane_doe",
+   "emailAddress": "janedoe@example.com",
+   "avatarUrls":    {
+      "16x16": "https://secure.gravatar.com/avatar/e1f3994f2632af3d1c8c2dcc168a10e6?d=mm&amp;s=16",
+      "24x24": "https://secure.gravatar.com/avatar/e1f3994f2632af3d1c8c2dcc168a10e6?d=mm&amp;s=24",
+      "32x32": "https://secure.gravatar.com/avatar/e1f3994f2632af3d1c8c2dcc168a10e6?d=mm&amp;s=32",
+      "48x48": "https://secure.gravatar.com/avatar/e1f3994f2632af3d1c8c2dcc168a10e6?d=mm&amp;s=48"
+   },
+   "displayName": "Jane Doe",
+   "active": true,
+   "timeZone": "Europe/Berlin",
+   "locale": "en_US",
+   "groups":    {
+      "size": 1,
+      "items": []
+   },
+   "applicationRoles":    {
+      "size": 1,
+      "items": []
+   },
+   "expand": "groups,applicationRoles"
+}</con:responseContent></con:response><con:response name="Get Deleted User" id="31688a1f-ea0a-4ce3-99c7-560dd4ac5381" httpResponseStatus="404" mediaType="application/json" dataSource=""><con:settings/><con:script>def queryString = mockRequest.getRequest().getQueryString()
+log.info "QueryString: " + queryString</con:script><con:responseContent>{
+   "errorMessages": ["The user with the key 'ID12345' does not exist"],
+   "errors": {}
+}</con:responseContent></con:response></con:restMockAction>

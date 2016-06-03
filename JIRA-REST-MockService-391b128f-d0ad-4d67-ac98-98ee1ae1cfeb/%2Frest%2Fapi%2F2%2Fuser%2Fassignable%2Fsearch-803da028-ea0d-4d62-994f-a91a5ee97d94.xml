@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction name="/rest/api/2/user/assignable/search" method="GET" resourcePath="/rest/api/2/user/assignable/search" id="803da028-ea0d-4d62-994f-a91a5ee97d94" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:defaultResponse>Get All Assignable Users (1)</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:dispatchConfig/><con:dispatchPath xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><con:dispatchXPath/><con:response name="Get All Assignable Users (1)" id="a290c454-4ba3-4b4b-8749-1e991af88a8e" httpResponseStatus="200" mediaType="application/json" dataSource=""><con:settings/><con:responseContent><![CDATA[[
+      {
+      "self": "https://rest-wsb4.atlassian.net/rest/api/2/user?username=admin",
+      "key": "admin",
+      "name": "admin",
+      "emailAddress": "mg.ciwoniuk@gmail.com",
+      "avatarUrls":       {
+         "16x16": "https://rest-wsb4.atlassian.net/secure/useravatar?size=xsmall&avatarId=10349",
+         "24x24": "https://rest-wsb4.atlassian.net/secure/useravatar?size=small&avatarId=10349",
+         "32x32": "https://rest-wsb4.atlassian.net/secure/useravatar?size=medium&avatarId=10349",
+         "48x48": "https://rest-wsb4.atlassian.net/secure/useravatar?avatarId=10349"
+      },
+      "displayName": "Gosia",
+      "active": true,
+      "timeZone": "Europe/Berlin",
+      "locale": "en_US"
+   },
+      {
+      "self": "https://rest-wsb4.atlassian.net/rest/api/2/user?username=d.kryskiewicz",
+      "key": "d.kryskiewicz",
+      "name": "d.kryskiewicz",
+      "emailAddress": "d.kryskiewicz@gmail.com",
+      "avatarUrls":       {
+         "16x16": "https://secure.gravatar.com/avatar/f33051299d5ab8c2f1760339d6496b01?d=mm&s=16",
+         "24x24": "https://secure.gravatar.com/avatar/f33051299d5ab8c2f1760339d6496b01?d=mm&s=24",
+         "32x32": "https://secure.gravatar.com/avatar/f33051299d5ab8c2f1760339d6496b01?d=mm&s=32",
+         "48x48": "https://secure.gravatar.com/avatar/f33051299d5ab8c2f1760339d6496b01?d=mm&s=48"
+      },
+      "displayName": "Dominik",
+      "active": true,
+      "timeZone": "Europe/Berlin",
+      "locale": "en_US"
+   },
+      {
+      "self": "https://rest-wsb4.atlassian.net/rest/api/2/user?username=janinajakusz",
+      "key": "janinajakusz",
+      "name": "janinajakusz",
+      "emailAddress": "janinajakusz@gmail.com",
+      "avatarUrls":       {
+         "16x16": "https://rest-wsb4.atlassian.net/secure/useravatar?size=xsmall&avatarId=10335",
+         "24x24": "https://rest-wsb4.atlassian.net/secure/useravatar?size=small&avatarId=10335",
+         "32x32": "https://rest-wsb4.atlassian.net/secure/useravatar?size=medium&avatarId=10335",
+         "48x48": "https://rest-wsb4.atlassian.net/secure/useravatar?avatarId=10335"
+      },
+      "displayName": "Janka",
+      "active": true,
+      "timeZone": "Europe/Berlin",
+      "locale": "en_US"
+   },
+      {
+      "self": "https://rest-wsb4.atlassian.net/rest/api/2/user?username=plamka89",
+      "key": "plamka89",
+      "name": "plamka89",
+      "emailAddress": "plamka89@gmail.com",
+      "avatarUrls":       {
+         "16x16": "https://secure.gravatar.com/avatar/94a4f526fc4396a8eaf93f2ff0fb9d5f?d=mm&s=16",
+         "24x24": "https://secure.gravatar.com/avatar/94a4f526fc4396a8eaf93f2ff0fb9d5f?d=mm&s=24",
+         "32x32": "https://secure.gravatar.com/avatar/94a4f526fc4396a8eaf93f2ff0fb9d5f?d=mm&s=32",
+         "48x48": "https://secure.gravatar.com/avatar/94a4f526fc4396a8eaf93f2ff0fb9d5f?d=mm&s=48"
+      },
+      "displayName": "tester1",
+      "active": true,
+      "timeZone": "Europe/Berlin",
+      "locale": "en_US"
+   },
+      {
+      "self": "https://rest-wsb4.atlassian.net/rest/api/2/user?username=rychlowski.pawel",
+      "key": "rychlowski.pawel",
+      "name": "rychlowski.pawel",
+      "emailAddress": "rychlowski.pawel@gmail.com",
+      "avatarUrls":       {
+         "16x16": "https://secure.gravatar.com/avatar/0bc456b7aab9c27523755180c1f67f23?d=mm&s=16",
+         "24x24": "https://secure.gravatar.com/avatar/0bc456b7aab9c27523755180c1f67f23?d=mm&s=24",
+         "32x32": "https://secure.gravatar.com/avatar/0bc456b7aab9c27523755180c1f67f23?d=mm&s=32",
+         "48x48": "https://secure.gravatar.com/avatar/0bc456b7aab9c27523755180c1f67f23?d=mm&s=48"
+      },
+      "displayName": "Paweł",
+      "active": true,
+      "timeZone": "Europe/Berlin",
+      "locale": "en_US"
+   }
+]]]></con:responseContent></con:response><con:response name="Get All Assignable Users (+ New User)" id="762b737c-b33d-4d17-bc84-7a264fac33ba" httpResponseStatus="200" mediaType="application/json" dataSource=""><con:settings/><con:responseContent><![CDATA[[
+      {
+      "self": "https://rest-wsb4.atlassian.net/rest/api/2/user?username=admin",
+      "key": "admin",
+      "name": "admin",
+      "emailAddress": "mg.ciwoniuk@gmail.com",
+      "avatarUrls":       {
+         "16x16": "https://rest-wsb4.atlassian.net/secure/useravatar?size=xsmall&avatarId=10349",
+         "24x24": "https://rest-wsb4.atlassian.net/secure/useravatar?size=small&avatarId=10349",
+         "32x32": "https://rest-wsb4.atlassian.net/secure/useravatar?size=medium&avatarId=10349",
+         "48x48": "https://rest-wsb4.atlassian.net/secure/useravatar?avatarId=10349"
+      },
+      "displayName": "Gosia",
+      "active": true,
+      "timeZone": "Europe/Berlin",
+      "locale": "en_US"
+   },
+      {
+      "self": "https://rest-wsb4.atlassian.net/rest/api/2/user?username=d.kryskiewicz",
+      "key": "d.kryskiewicz",
+      "name": "d.kryskiewicz",
+      "emailAddress": "d.kryskiewicz@gmail.com",
+      "avatarUrls":       {
+         "16x16": "https://secure.gravatar.com/avatar/f33051299d5ab8c2f1760339d6496b01?d=mm&s=16",
+         "24x24": "https://secure.gravatar.com/avatar/f33051299d5ab8c2f1760339d6496b01?d=mm&s=24",
+         "32x32": "https://secure.gravatar.com/avatar/f33051299d5ab8c2f1760339d6496b01?d=mm&s=32",
+         "48x48": "https://secure.gravatar.com/avatar/f33051299d5ab8c2f1760339d6496b01?d=mm&s=48"
+      },
+      "displayName": "Dominik",
+      "active": true,
+      "timeZone": "Europe/Berlin",
+      "locale": "en_US"
+   },
+      {
+      "self": "https://rest-wsb4.atlassian.net/rest/api/2/user?username=jane_doe",
+      "key": "ID10301",
+      "name": "jane_doe",
+      "emailAddress": "janedoe@example.com",
+      "avatarUrls":       {
+         "16x16": "https://secure.gravatar.com/avatar/e1f3994f2632af3d1c8c2dcc168a10e6?d=mm&s=16",
+         "24x24": "https://secure.gravatar.com/avatar/e1f3994f2632af3d1c8c2dcc168a10e6?d=mm&s=24",
+         "32x32": "https://secure.gravatar.com/avatar/e1f3994f2632af3d1c8c2dcc168a10e6?d=mm&s=32",
+         "48x48": "https://secure.gravatar.com/avatar/e1f3994f2632af3d1c8c2dcc168a10e6?d=mm&s=48"
+      },
+      "displayName": "Jane Doe",
+      "active": true,
+      "timeZone": "Europe/Berlin",
+      "locale": "en_US"
+   },
+      {
+      "self": "https://rest-wsb4.atlassian.net/rest/api/2/user?username=janinajakusz",
+      "key": "janinajakusz",
+      "name": "janinajakusz",
+      "emailAddress": "janinajakusz@gmail.com",
+      "avatarUrls":       {
+         "16x16": "https://rest-wsb4.atlassian.net/secure/useravatar?size=xsmall&avatarId=10335",
+         "24x24": "https://rest-wsb4.atlassian.net/secure/useravatar?size=small&avatarId=10335",
+         "32x32": "https://rest-wsb4.atlassian.net/secure/useravatar?size=medium&avatarId=10335",
+         "48x48": "https://rest-wsb4.atlassian.net/secure/useravatar?avatarId=10335"
+      },
+      "displayName": "Janka",
+      "active": true,
+      "timeZone": "Europe/Berlin",
+      "locale": "en_US"
+   },
+      {
+      "self": "https://rest-wsb4.atlassian.net/rest/api/2/user?username=plamka89",
+      "key": "plamka89",
+      "name": "plamka89",
+      "emailAddress": "plamka89@gmail.com",
+      "avatarUrls":       {
+         "16x16": "https://secure.gravatar.com/avatar/94a4f526fc4396a8eaf93f2ff0fb9d5f?d=mm&s=16",
+         "24x24": "https://secure.gravatar.com/avatar/94a4f526fc4396a8eaf93f2ff0fb9d5f?d=mm&s=24",
+         "32x32": "https://secure.gravatar.com/avatar/94a4f526fc4396a8eaf93f2ff0fb9d5f?d=mm&s=32",
+         "48x48": "https://secure.gravatar.com/avatar/94a4f526fc4396a8eaf93f2ff0fb9d5f?d=mm&s=48"
+      },
+      "displayName": "tester1",
+      "active": true,
+      "timeZone": "Europe/Berlin",
+      "locale": "en_US"
+   },
+      {
+      "self": "https://rest-wsb4.atlassian.net/rest/api/2/user?username=rychlowski.pawel",
+      "key": "rychlowski.pawel",
+      "name": "rychlowski.pawel",
+      "emailAddress": "rychlowski.pawel@gmail.com",
+      "avatarUrls":       {
+         "16x16": "https://secure.gravatar.com/avatar/0bc456b7aab9c27523755180c1f67f23?d=mm&s=16",
+         "24x24": "https://secure.gravatar.com/avatar/0bc456b7aab9c27523755180c1f67f23?d=mm&s=24",
+         "32x32": "https://secure.gravatar.com/avatar/0bc456b7aab9c27523755180c1f67f23?d=mm&s=32",
+         "48x48": "https://secure.gravatar.com/avatar/0bc456b7aab9c27523755180c1f67f23?d=mm&s=48"
+      },
+      "displayName": "Paweł",
+      "active": true,
+      "timeZone": "Europe/Berlin",
+      "locale": "en_US"
+   }
+]]]></con:responseContent></con:response><con:response name="Get All Assignable Users (2)" id="3ffa5a8a-5a89-4345-b504-ae7835749bae" httpResponseStatus="200" mediaType="application/json" dataSource=""><con:settings/><con:responseContent><![CDATA[[
+      {
+      "self": "https://rest-wsb4.atlassian.net/rest/api/2/user?username=admin",
+      "key": "admin",
+      "name": "admin",
+      "emailAddress": "mg.ciwoniuk@gmail.com",
+      "avatarUrls":       {
+         "16x16": "https://rest-wsb4.atlassian.net/secure/useravatar?size=xsmall&avatarId=10349",
+         "24x24": "https://rest-wsb4.atlassian.net/secure/useravatar?size=small&avatarId=10349",
+         "32x32": "https://rest-wsb4.atlassian.net/secure/useravatar?size=medium&avatarId=10349",
+         "48x48": "https://rest-wsb4.atlassian.net/secure/useravatar?avatarId=10349"
+      },
+      "displayName": "Gosia",
+      "active": true,
+      "timeZone": "Europe/Berlin",
+      "locale": "en_US"
+   },
+      {
+      "self": "https://rest-wsb4.atlassian.net/rest/api/2/user?username=d.kryskiewicz",
+      "key": "d.kryskiewicz",
+      "name": "d.kryskiewicz",
+      "emailAddress": "d.kryskiewicz@gmail.com",
+      "avatarUrls":       {
+         "16x16": "https://secure.gravatar.com/avatar/f33051299d5ab8c2f1760339d6496b01?d=mm&s=16",
+         "24x24": "https://secure.gravatar.com/avatar/f33051299d5ab8c2f1760339d6496b01?d=mm&s=24",
+         "32x32": "https://secure.gravatar.com/avatar/f33051299d5ab8c2f1760339d6496b01?d=mm&s=32",
+         "48x48": "https://secure.gravatar.com/avatar/f33051299d5ab8c2f1760339d6496b01?d=mm&s=48"
+      },
+      "displayName": "Dominik",
+      "active": true,
+      "timeZone": "Europe/Berlin",
+      "locale": "en_US"
+   },
+      {
+      "self": "https://rest-wsb4.atlassian.net/rest/api/2/user?username=janinajakusz",
+      "key": "janinajakusz",
+      "name": "janinajakusz",
+      "emailAddress": "janinajakusz@gmail.com",
+      "avatarUrls":       {
+         "16x16": "https://rest-wsb4.atlassian.net/secure/useravatar?size=xsmall&avatarId=10335",
+         "24x24": "https://rest-wsb4.atlassian.net/secure/useravatar?size=small&avatarId=10335",
+         "32x32": "https://rest-wsb4.atlassian.net/secure/useravatar?size=medium&avatarId=10335",
+         "48x48": "https://rest-wsb4.atlassian.net/secure/useravatar?avatarId=10335"
+      },
+      "displayName": "Janka",
+      "active": true,
+      "timeZone": "Europe/Berlin",
+      "locale": "en_US"
+   },
+      {
+      "self": "https://rest-wsb4.atlassian.net/rest/api/2/user?username=plamka89",
+      "key": "plamka89",
+      "name": "plamka89",
+      "emailAddress": "plamka89@gmail.com",
+      "avatarUrls":       {
+         "16x16": "https://secure.gravatar.com/avatar/94a4f526fc4396a8eaf93f2ff0fb9d5f?d=mm&s=16",
+         "24x24": "https://secure.gravatar.com/avatar/94a4f526fc4396a8eaf93f2ff0fb9d5f?d=mm&s=24",
+         "32x32": "https://secure.gravatar.com/avatar/94a4f526fc4396a8eaf93f2ff0fb9d5f?d=mm&s=32",
+         "48x48": "https://secure.gravatar.com/avatar/94a4f526fc4396a8eaf93f2ff0fb9d5f?d=mm&s=48"
+      },
+      "displayName": "tester1",
+      "active": true,
+      "timeZone": "Europe/Berlin",
+      "locale": "en_US"
+   },
+      {
+      "self": "https://rest-wsb4.atlassian.net/rest/api/2/user?username=rychlowski.pawel",
+      "key": "rychlowski.pawel",
+      "name": "rychlowski.pawel",
+      "emailAddress": "rychlowski.pawel@gmail.com",
+      "avatarUrls":       {
+         "16x16": "https://secure.gravatar.com/avatar/0bc456b7aab9c27523755180c1f67f23?d=mm&s=16",
+         "24x24": "https://secure.gravatar.com/avatar/0bc456b7aab9c27523755180c1f67f23?d=mm&s=24",
+         "32x32": "https://secure.gravatar.com/avatar/0bc456b7aab9c27523755180c1f67f23?d=mm&s=32",
+         "48x48": "https://secure.gravatar.com/avatar/0bc456b7aab9c27523755180c1f67f23?d=mm&s=48"
+      },
+      "displayName": "Paweł",
+      "active": true,
+      "timeZone": "Europe/Berlin",
+      "locale": "en_US"
+   }
+]]]></con:responseContent></con:response></con:restMockAction>

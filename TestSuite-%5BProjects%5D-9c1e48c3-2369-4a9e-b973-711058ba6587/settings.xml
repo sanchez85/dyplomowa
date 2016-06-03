@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite id="9c1e48c3-2369-4a9e-b973-711058ba6587" name="TestSuite [Projects]" xmlns:con="http://eviware.com/soapui/config"><con:description>TestSuite generated for REST Service [JIRA 7.1.2]</con:description><con:settings><con:setting id="9c1e48c3-2369-4a9e-b973-711058ba6587fileName">TestSuite-%5BProjects%5D</con:setting></con:settings><con:runType>SEQUENTIAL</con:runType><con:properties/><con:reportParameters/></con:testSuite>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction name="/rest/api/2/issue/createmeta" method="GET" resourcePath="/rest/api/2/issue/createmeta" id="e35f3ee5-328e-4bf7-bfcb-308be3aaebe8" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:defaultResponse>Get create issue meta</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:dispatchConfig/><con:dispatchPath xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><con:dispatchXPath/><con:response name="Get create issue meta" id="fa762da2-fe91-4339-8fad-205833c7a9ea" httpResponseStatus="200" mediaType="application/json" dataSource=""><con:settings/><con:responseContent><![CDATA[{
+   "expand": "projects",
+   "projects":    [
+            {
+         "self": "https://rest-wsb4.atlassian.net/rest/api/2/project/10100",
+         "id": "10100",
+         "key": "BP",
+         "name": "businessProject",
+         "avatarUrls":          {
+            "48x48": "https://rest-wsb4.atlassian.net/secure/projectavatar?pid=10100&avatarId=10204",
+            "24x24": "https://rest-wsb4.atlassian.net/secure/projectavatar?size=small&pid=10100&avatarId=10204",
+            "16x16": "https://rest-wsb4.atlassian.net/secure/projectavatar?size=xsmall&pid=10100&avatarId=10204",
+            "32x32": "https://rest-wsb4.atlassian.net/secure/projectavatar?size=medium&pid=10100&avatarId=10204"
+         },
+         "issuetypes":          [
+                        {
+               "self": "https://rest-wsb4.atlassian.net/rest/api/2/issuetype/10002",
+               "id": "10002",
+               "description": "A task that needs to be done.",
+               "iconUrl": "https://rest-wsb4.atlassian.net/secure/viewavatar?size=xsmall&avatarId=10318&avatarType=issuetype",
+               "name": "Task",
+               "subtask": false
+            },
+                        {
+               "self": "https://rest-wsb4.atlassian.net/rest/api/2/issuetype/10003",
+               "id": "10003",
+               "description": "The sub-task of the issue",
+               "iconUrl": "https://rest-wsb4.atlassian.net/secure/viewavatar?size=xsmall&avatarId=10316&avatarType=issuetype",
+               "name": "Sub-task",
+               "subtask": true
+            }
+         ]
+      },
+            {
+         "self": "https://rest-wsb4.atlassian.net/rest/api/2/project/10200",
+         "id": "10200",
+         "key": "PD",
+         "name": "Praca Dyplomowa",
+         "avatarUrls":          {
+            "48x48": "https://rest-wsb4.atlassian.net/secure/projectavatar?pid=10200&avatarId=10600",
+            "24x24": "https://rest-wsb4.atlassian.net/secure/projectavatar?size=small&pid=10200&avatarId=10600",
+            "16x16": "https://rest-wsb4.atlassian.net/secure/projectavatar?size=xsmall&pid=10200&avatarId=10600",
+            "32x32": "https://rest-wsb4.atlassian.net/secure/projectavatar?size=medium&pid=10200&avatarId=10600"
+         },
+         "issuetypes":          [
+                        {
+               "self": "https://rest-wsb4.atlassian.net/rest/api/2/issuetype/10002",
+               "id": "10002",
+               "description": "A task that needs to be done.",
+               "iconUrl": "https://rest-wsb4.atlassian.net/secure/viewavatar?size=xsmall&avatarId=10318&avatarType=issuetype",
+               "name": "Task",
+               "subtask": false
+            },
+                        {
+               "self": "https://rest-wsb4.atlassian.net/rest/api/2/issuetype/10003",
+               "id": "10003",
+               "description": "The sub-task of the issue",
+               "iconUrl": "https://rest-wsb4.atlassian.net/secure/viewavatar?size=xsmall&avatarId=10316&avatarType=issuetype",
+               "name": "Sub-task",
+               "subtask": true
+            }
+         ]
+      },
+            {
+         "self": "https://rest-wsb4.atlassian.net/rest/api/2/project/10000",
+         "id": "10000",
+         "key": "TP",
+         "name": "testProject",
+         "avatarUrls":          {
+            "48x48": "https://rest-wsb4.atlassian.net/secure/projectavatar?pid=10000&avatarId=10201",
+            "24x24": "https://rest-wsb4.atlassian.net/secure/projectavatar?size=small&pid=10000&avatarId=10201",
+            "16x16": "https://rest-wsb4.atlassian.net/secure/projectavatar?size=xsmall&pid=10000&avatarId=10201",
+            "32x32": "https://rest-wsb4.atlassian.net/secure/projectavatar?size=medium&pid=10000&avatarId=10201"
+         },
+         "issuetypes":          [
+                        {
+               "self": "https://rest-wsb4.atlassian.net/rest/api/2/issuetype/10002",
+               "id": "10002",
+               "description": "A task that needs to be done.",
+               "iconUrl": "https://rest-wsb4.atlassian.net/secure/viewavatar?size=xsmall&avatarId=10318&avatarType=issuetype",
+               "name": "Task",
+               "subtask": false
+            },
+                        {
+               "self": "https://rest-wsb4.atlassian.net/rest/api/2/issuetype/10003",
+               "id": "10003",
+               "description": "The sub-task of the issue",
+               "iconUrl": "https://rest-wsb4.atlassian.net/secure/viewavatar?size=xsmall&avatarId=10316&avatarType=issuetype",
+               "name": "Sub-task",
+               "subtask": true
+            },
+                        {
+               "self": "https://rest-wsb4.atlassian.net/rest/api/2/issuetype/10001",
+               "id": "10001",
+               "description": "gh.issue.story.desc",
+               "iconUrl": "https://rest-wsb4.atlassian.net/images/icons/issuetypes/story.svg",
+               "name": "Story",
+               "subtask": false
+            },
+                        {
+               "self": "https://rest-wsb4.atlassian.net/rest/api/2/issuetype/10004",
+               "id": "10004",
+               "description": "A problem which impairs or prevents the functions of the product.",
+               "iconUrl": "https://rest-wsb4.atlassian.net/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+               "name": "Bug",
+               "subtask": false
+            },
+                        {
+               "self": "https://rest-wsb4.atlassian.net/rest/api/2/issuetype/10000",
+               "id": "10000",
+               "description": "gh.issue.epic.desc",
+               "iconUrl": "https://rest-wsb4.atlassian.net/images/icons/issuetypes/epic.svg",
+               "name": "Epic",
+               "subtask": false
+            }
+         ]
+      }
+   ]
+}]]></con:responseContent></con:response></con:restMockAction>

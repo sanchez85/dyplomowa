@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction name="/rest/api/2/project" method="POST" resourcePath="/rest/api/2/project" id="dff81662-4c1e-4ad9-a23b-14fe9e21d2aa" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:defaultResponse>Create New Project</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:dispatchConfig/><con:dispatchPath xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><con:dispatchXPath/><con:response name="Create New Project" id="7ec12ff1-b4d8-40c5-9302-e3a64376be30" httpResponseStatus="201" mediaType="application/json" dataSource=""><con:settings/><con:responseContent>{
+   "self": "https://rest-wsb4.atlassian.net/rest/api/2/project/11001",
+   "id": 12345,
+   "key": "EX"
+}</con:responseContent></con:response></con:restMockAction>

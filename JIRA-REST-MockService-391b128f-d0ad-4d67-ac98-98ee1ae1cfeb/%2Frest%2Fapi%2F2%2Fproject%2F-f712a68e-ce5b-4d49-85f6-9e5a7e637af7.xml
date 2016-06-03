@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction name="/rest/api/2/project/" method="PUT" resourcePath="/rest/api/2/project/" id="f712a68e-ce5b-4d49-85f6-9e5a7e637af7" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:defaultResponse>Update Project</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:dispatchConfig/><con:dispatchPath xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><con:dispatchXPath/><con:response name="Update Project" id="36e49cb8-b986-4017-a86b-e194e197f38d" httpResponseStatus="200" mediaType="application/json" dataSource=""><con:settings/><con:responseContent><![CDATA[{
+   "expand": "description,lead,url,projectKeys",
+   "self": "https://rest-wsb4.atlassian.net/rest/api/2/project/11001",
+   "id": "12345",
+   "key": "EX",
+   "description": "Przykladowy opis projektu.",
+   "lead":    {
+      "self": "https://rest-wsb4.atlassian.net/rest/api/2/user?username=admin",
+      "key": "admin",
+      "name": "admin",
+      "avatarUrls":       {
+         "16x16": "https://rest-wsb4.atlassian.net/secure/useravatar?size=xsmall&avatarId=10349",
+         "24x24": "https://rest-wsb4.atlassian.net/secure/useravatar?size=small&avatarId=10349",
+         "32x32": "https://rest-wsb4.atlassian.net/secure/useravatar?size=medium&avatarId=10349",
+         "48x48": "https://rest-wsb4.atlassian.net/secure/useravatar?avatarId=10349"
+      },
+      "displayName": "Gosia",
+      "active": true
+   },
+   "components": [],
+   "issueTypes":    [
+            {
+         "self": "https://rest-wsb4.atlassian.net/rest/api/2/issuetype/10002",
+         "id": "10002",
+         "description": "A task that needs to be done.",
+         "iconUrl": "https://rest-wsb4.atlassian.net/secure/viewavatar?size=xsmall&avatarId=10318&avatarType=issuetype",
+         "name": "Task",
+         "subtask": false,
+         "avatarId": 10318
+      },
+            {
+         "self": "https://rest-wsb4.atlassian.net/rest/api/2/issuetype/10003",
+         "id": "10003",
+         "description": "The sub-task of the issue",
+         "iconUrl": "https://rest-wsb4.atlassian.net/secure/viewavatar?size=xsmall&avatarId=10316&avatarType=issuetype",
+         "name": "Sub-task",
+         "subtask": true,
+         "avatarId": 10316
+      }
+   ],
+   "url": "http://atlassian.com",
+   "assigneeType": "UNASSIGNED",
+   "versions": [],
+   "name": "Example",
+   "roles":    {
+      "Service Desk Team": "https://rest-wsb4.atlassian.net/rest/api/2/project/11001/role/10101",
+      "Service Desk Customers": "https://rest-wsb4.atlassian.net/rest/api/2/project/11001/role/10100",
+      "Administrators": "https://rest-wsb4.atlassian.net/rest/api/2/project/11001/role/10002",
+      "Tempo Project Managers": "https://rest-wsb4.atlassian.net/rest/api/2/project/11001/role/10102"
+   },
+   "avatarUrls":    {
+      "48x48": "https://rest-wsb4.atlassian.net/secure/projectavatar?pid=11001&avatarId=10200",
+      "24x24": "https://rest-wsb4.atlassian.net/secure/projectavatar?size=small&pid=11001&avatarId=10200",
+      "16x16": "https://rest-wsb4.atlassian.net/secure/projectavatar?size=xsmall&pid=11001&avatarId=10200",
+      "32x32": "https://rest-wsb4.atlassian.net/secure/projectavatar?size=medium&pid=11001&avatarId=10200"
+   },
+   "projectTypeKey": "business"
+}]]></con:responseContent></con:response></con:restMockAction>

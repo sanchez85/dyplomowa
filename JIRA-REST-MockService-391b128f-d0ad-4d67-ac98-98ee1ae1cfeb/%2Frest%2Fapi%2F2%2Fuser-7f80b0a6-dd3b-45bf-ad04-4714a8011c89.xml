@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction name="/rest/api/2/user" method="POST" resourcePath="/rest/api/2/user" id="7f80b0a6-dd3b-45bf-ad04-4714a8011c89" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:defaultResponse>Create New User</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:dispatchConfig/><con:dispatchPath xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><con:dispatchXPath/><con:response name="Create New User" id="c4319c1d-f718-459f-bc90-e301c3f61360" httpResponseStatus="201" mediaType="application/json" dataSource=""><con:settings/><con:responseContent>{
+   "self": "https://rest-wsb4.atlassian.net/rest/api/2/user?username=jane_doe",
+   "key": "ID12345",
+   "name": "jane_doe",
+   "emailAddress": "janedoe@example.com",
+   "avatarUrls":    {
+      "16x16": "https://secure.gravatar.com/avatar/e1f3994f2632af3d1c8c2dcc168a10e6?d=mm&amp;s=16",
+      "24x24": "https://secure.gravatar.com/avatar/e1f3994f2632af3d1c8c2dcc168a10e6?d=mm&amp;s=24",
+      "32x32": "https://secure.gravatar.com/avatar/e1f3994f2632af3d1c8c2dcc168a10e6?d=mm&amp;s=32",
+      "48x48": "https://secure.gravatar.com/avatar/e1f3994f2632af3d1c8c2dcc168a10e6?d=mm&amp;s=48"
+   },
+   "displayName": "Jane Doe",
+   "active": true,
+   "timeZone": "Europe/Berlin",
+   "locale": "en_US",
+   "groups":    {
+      "size": 1,
+      "items": []
+   },
+   "applicationRoles":    {
+      "size": 1,
+      "items": []
+   },
+   "expand": "groups,applicationRoles"
+}</con:responseContent></con:response></con:restMockAction>

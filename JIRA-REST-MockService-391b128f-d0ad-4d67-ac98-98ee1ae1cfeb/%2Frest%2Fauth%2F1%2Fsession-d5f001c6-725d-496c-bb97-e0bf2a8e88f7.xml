@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction name="/rest/auth/1/session" method="GET" resourcePath="/rest/auth/1/session" id="d5f001c6-725d-496c-bb97-e0bf2a8e88f7" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:defaultResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Current user [authenticated]</con:defaultResponse><con:dispatchStyle>SCRIPT</con:dispatchStyle><con:dispatchConfig/><con:dispatchPath>// Match based on header
+def authenticated = mockRequest.requestHeaders['authenticated'][0]
+
+if (authenticated == 'no') {
+	return "Current user [not authenticated]"
+} else if (authenticated =='yes'){
+	return "Current user [authenticated]"
+}
+</con:dispatchPath><con:dispatchXPath/><con:response name="Current user [not authenticated]" id="f82ec7d4-8f66-4c5f-869a-9e85d7d6ca8f" httpResponseStatus="401" mediaType="application/json" dataSource=""><con:settings/><con:responseContent>{
+   "errorMessages": ["You are not authenticated. Authentication required to perform this operation."],
+   "errors": {}
+}</con:responseContent></con:response><con:response name="Current user [authenticated]" id="1e77dc7f-9df2-4eef-98d0-cb4bcc12185c" httpResponseStatus="200" mediaType="application/json" dataSource=""><con:settings/><con:responseContent>{
+   "self": "https://rest-wsb4.atlassian.net/rest/api/latest/user?username=admin",
+   "name": "admin",
+   "loginInfo":    {
+      "failedLoginCount": 0,
+      "loginCount": 123,
+      "lastFailedLoginTime": "2016-04-02T22:54:19.344+0200",
+      "previousLoginTime": "2016-05-31T20:58:19.639+0200"
+   }
+}</con:responseContent></con:response></con:restMockAction>

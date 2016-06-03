@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockService id="391b128f-d0ad-4d67-ac98-98ee1ae1cfeb" port="9090" path="/" host="localhost" name="JIRA REST MockService" docroot="" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:properties/><con:headerValidator/></con:restMockService>

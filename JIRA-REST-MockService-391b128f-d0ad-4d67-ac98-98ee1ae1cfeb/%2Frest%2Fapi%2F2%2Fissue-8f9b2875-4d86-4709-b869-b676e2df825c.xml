@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction name="/rest/api/2/issue" method="POST" resourcePath="/rest/api/2/issue" id="8f9b2875-4d86-4709-b869-b676e2df825c" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:defaultResponse>Create Issue</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:dispatchConfig/><con:dispatchPath xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><con:dispatchXPath/><con:response name="Create Issue" id="09dd9386-5c9e-41c2-b6ab-22f66cbca1f8" httpResponseStatus="201" mediaType="application/json" dataSource=""><con:settings/><con:responseContent>{
+   "id": "12345",
+   "key": "TP-01",
+   "self": "https://rest-wsb4.atlassian.net/rest/api/2/issue/10701"
+}</con:responseContent></con:response></con:restMockAction>
