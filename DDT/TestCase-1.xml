@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="24b836ac-e29a-4c33-ba78-3893e37f3d7b" discardOkResults="true" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="TestCase 1" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword="" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="24b836ac-e29a-4c33-ba78-3893e37f3d7bfileName">TestCase-1</con:setting></con:settings><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="datasource" name="DataSource" id="992b868e-8357-4b34-ba67-178746d52e9e"><con:settings/><con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:dataSource type="Excel"><con:configuration><file>Zeszyt1.xlsx</file><worksheet/><cell>A2</cell><ignoreEmpty>false</ignoreEmpty></con:configuration></con:dataSource><con:property>id</con:property><con:property>name</con:property><con:completeLastOperation>true</con:completeLastOperation><con:restartOnRun>true</con:restartOnRun></con:config></con:testStep><con:testStep type="restrequest" name="GET - getProject - Request 1" id="0c60d213-d334-4dd6-9bda-b48136a31a2f"><con:settings/><con:config service="JIRA 7.1.2" resourcePath="/rest/api/2/project/{projectIdOrKey}" methodName="GET - getProject" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GET - getProject - Request 1" id="131a50d1-125a-4693-aa22-34ee1eb303bc" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Cookie" value="__atl_path=172.26.26.14.1456647999370199; _sio=c18d1c83-7e17-4209-aca9-ed664df3e380; __utma=209470481.2118593455.1459981574.1465391358.1465400863.24; __utmz=209470481.1459981574.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); ISESSION=&amp;quot;af7f6f293997c160f81b437837cf31499b25c749-xsrf=451d0136402965e96b61a31ce02621fdd7bd99e0&amp;quot;; ondemand.signup.enabled=false; studio.crowd.tokenkey=zr5dnSAizzZDZED7WiT52w00; JSESSIONID=7BBDC80E663A1A76F1425345259A2DB0; atlassian.xsrf.token=BXVW-JU2O-IO6T-IVZG|c4f027f5773cbcf148a29f5d414207d11443c537|lin; __utmc=209470481; __utmb=209470481.1.10.1465400863; __utmt=1" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>https://rest-wsb4.atlassian.net</con:endpoint><con:request/><con:originalUri>https://rest-wsb4.atlassian.net/rest/api/2/project/</con:originalUri><con:assertion type="MessageContentAssertion" id="5c96e995-825d-445c-965f-e7151482814f" name="Message Content Assertion"><con:configuration xsi:type="con:MessageContentAssertion"><con:elements><con:xpath>declare namespace ns1='https://rest-wsb4.atlassian.net/rest/api/2/project/';
+//ns1:Response[1]/ns1:name[1]</con:xpath><con:element>name</con:element><con:type xsi:nil="true"/><con:operator>=</con:operator><con:enabled>true</con:enabled><con:expectedValue>${DataSource#name}</con:expectedValue><con:numberType>false</con:numberType></con:elements><con:originalMessage><![CDATA[<Response xmlns="https://rest-wsb4.atlassian.net/rest/api/2/project/">
+   <assigneeType>UNASSIGNED</assigneeType>
+   <avatarUrls>
+      <_16x16>https://rest-wsb4.atlassian.net/secure/projectavatar?size=xsmall&amp;pid=10000&amp;avatarId=10201</_16x16>
+      <_24x24>https://rest-wsb4.atlassian.net/secure/projectavatar?size=small&amp;pid=10000&amp;avatarId=10201</_24x24>
+      <_32x32>https://rest-wsb4.atlassian.net/secure/projectavatar?size=medium&amp;pid=10000&amp;avatarId=10201</_32x32>
+      <_48x48>https://rest-wsb4.atlassian.net/secure/projectavatar?pid=10000&amp;avatarId=10201</_48x48>
+   </avatarUrls>
+   <components/>
+   <description/>
+   <expand>description,lead,url,projectKeys</expand>
+   <id>10000</id>
+   <issueTypes>
+      <e>
+         <avatarId>10318</avatarId>
+         <description>A task that needs to be done.</description>
+         <iconUrl>https://rest-wsb4.atlassian.net/secure/viewavatar?size=xsmall&amp;avatarId=10318&amp;avatarType=issuetype</iconUrl>
+         <id>10002</id>
+         <name>Task</name>
+         <self>https://rest-wsb4.atlassian.net/rest/api/2/issuetype/10002</self>
+         <subtask>false</subtask>
+      </e>
+      <e>
+         <avatarId>10316</avatarId>
+         <description>The sub-task of the issue</description>
+         <iconUrl>https://rest-wsb4.atlassian.net/secure/viewavatar?size=xsmall&amp;avatarId=10316&amp;avatarType=issuetype</iconUrl>
+         <id>10003</id>
+         <name>Sub-task</name>
+         <self>https://rest-wsb4.atlassian.net/rest/api/2/issuetype/10003</self>
+         <subtask>true</subtask>
+      </e>
+      <e>
+         <description>gh.issue.story.desc</description>
+         <iconUrl>https://rest-wsb4.atlassian.net/images/icons/issuetypes/story.svg</iconUrl>
+         <id>10001</id>
+         <name>Story</name>
+         <self>https://rest-wsb4.atlassian.net/rest/api/2/issuetype/10001</self>
+         <subtask>false</subtask>
+      </e>
+      <e>
+         <avatarId>10303</avatarId>
+         <description>A problem which impairs or prevents the functions of the product.</description>
+         <iconUrl>https://rest-wsb4.atlassian.net/secure/viewavatar?size=xsmall&amp;avatarId=10303&amp;avatarType=issuetype</iconUrl>
+         <id>10004</id>
+         <name>Bug</name>
+         <self>https://rest-wsb4.atlassian.net/rest/api/2/issuetype/10004</self>
+         <subtask>false</subtask>
+      </e>
+      <e>
+         <description>gh.issue.epic.desc</description>
+         <iconUrl>https://rest-wsb4.atlassian.net/images/icons/issuetypes/epic.svg</iconUrl>
+         <id>10000</id>
+         <name>Epic</name>
+         <self>https://rest-wsb4.atlassian.net/rest/api/2/issuetype/10000</self>
+         <subtask>false</subtask>
+      </e>
+   </issueTypes>
+   <key>TP</key>
+   <lead>
+      <active>true</active>
+      <avatarUrls>
+         <_16x16>https://rest-wsb4.atlassian.net/secure/useravatar?size=xsmall&amp;avatarId=10349</_16x16>
+         <_24x24>https://rest-wsb4.atlassian.net/secure/useravatar?size=small&amp;avatarId=10349</_24x24>
+         <_32x32>https://rest-wsb4.atlassian.net/secure/useravatar?size=medium&amp;avatarId=10349</_32x32>
+         <_48x48>https://rest-wsb4.atlassian.net/secure/useravatar?avatarId=10349</_48x48>
+      </avatarUrls>
+      <displayName>Gosia</displayName>
+      <key>admin</key>
+      <name>admin</name>
+      <self>https://rest-wsb4.atlassian.net/rest/api/2/user?username=admin</self>
+   </lead>
+   <name>testProject</name>
+   <projectTypeKey>software</projectTypeKey>
+   <roles>
+      <Administrators>https://rest-wsb4.atlassian.net/rest/api/2/project/10000/role/10002</Administrators>
+      <ServiceDeskCustomers>https://rest-wsb4.atlassian.net/rest/api/2/project/10000/role/10100</ServiceDeskCustomers>
+      <ServiceDeskTeam>https://rest-wsb4.atlassian.net/rest/api/2/project/10000/role/10101</ServiceDeskTeam>
+      <TempoProjectManagers>https://rest-wsb4.atlassian.net/rest/api/2/project/10000/role/10102</TempoProjectManagers>
+   </roles>
+   <self>https://rest-wsb4.atlassian.net/rest/api/2/project/10000</self>
+   <versions/>
+</Response>]]></con:originalMessage></con:configuration></con:assertion><con:credentials><con:username xsi:nil="true"/><con:password xsi:nil="true"/><con:domain xsi:nil="true"/><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters><entry key="projectIdOrKey" value="${DataSource#id}" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:testStep type="datasink" name="DataSink" id="8d4b5def-657b-4ac8-8ed6-6d3ab21fb3eb"><con:settings/><con:config xsi:type="con:DataSinkStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:dataSink type="Excel"><con:configuration><file/><outfile>OUT.xlsx</outfile><worksheet>Arkusz1</worksheet><cell>A1</cell><evaluateFormulas>false</evaluateFormulas></con:configuration></con:dataSink><con:properties><con:property><con:name>id</con:name><con:value>${DataSource#id}</con:value></con:property><con:property><con:name>response</con:name><con:value>${GET - getProject - Request 1#Response}</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="datasourceloop" name="DataSource Loop" id="386e4be0-58ce-4e69-b14a-a672c50e4623"><con:settings/><con:config><dataSourceStep>DataSource</dataSourceStep><targetStep>GET - getProject - Request 1</targetStep></con:config></con:testStep><con:testStep type="datagen" name="DataGen" id="dbfb0202-5a01-49cf-989c-4aed62521d7b"><con:settings/><con:config xsi:type="con:DataGeneratorStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:property type="Script"><con:configuration><script>def sdf = new java.text.SimpleDateFormat("yyyy-MM-dd")
+return sdf.format( new Date())</script></con:configuration><con:name>today</con:name><con:mode>READ</con:mode><con:shared>false</con:shared></con:property><con:property type="Template"><con:configuration><template>&lt;date>
+	&lt;today>
+		$(DataGen#today)
+	&lt;/today>
+&lt;/date></template><entitize>false</entitize></con:configuration><con:name>xml-content</con:name><con:mode>STEP</con:mode><con:shared>false</con:shared></con:property><con:property type="Number"><con:configuration><start>0</start><end>1000</end><step>10</step><pattern>#.00'USD'</pattern><random>false</random><persist>false</persist></con:configuration><con:name>numbers</con:name><con:mode>STEP</con:mode><con:shared>false</con:shared></con:property><con:property type="List"><con:configuration><value>poniedzialek</value><value>wtorek</value><value>sroda</value><value>czwartek</value><value>piatek</value><value>sobota</value><value>niedziela</value><random>false</random></con:configuration><con:name>dni_tygodnia</con:name><con:mode>STEP</con:mode><con:shared>false</con:shared></con:property></con:config></con:testStep><con:properties/><con:reportParameters/><con:breakPoints><con:testStepId>837b3d0c-b3d6-454f-b3e7-e6739bc9dc4a</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>65226526-237e-4b71-bd84-1c1a36b3a3ff</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>c11722f2-f593-43f8-9661-139c3d683da3</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>3015dd6d-6433-43d6-aaea-e1e8dfa6a6fc</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints></con:testCase>
